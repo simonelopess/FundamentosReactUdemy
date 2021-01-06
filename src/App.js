@@ -2,12 +2,17 @@ import First from './components/basics/First';
 import WithParams from './components/basics/WithParams';
 import RandomComponent from './components/basics/RandomComponent';
 import Card from './components/layout/Card';
+import Family from './components/basics/Family';
+
 import './App.css'
 const App = () => {
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+      <Card titulo="#04 -Componentes com filhos" color="#28ABE3">
+        <Family surname="Ferreira"/>    
+      </Card>
         <Card titulo="#03 -Exemplo de Card" color="#FA6900">
           <RandomComponent max={60} min={1} title="Números Aleatórios"/>
         </Card>
