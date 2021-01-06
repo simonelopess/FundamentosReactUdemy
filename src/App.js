@@ -10,6 +10,8 @@ import EvenorOdd from './components/conditional/EvenorOdd';
 import InfoUser from './components/conditional/InfoUser';
 import DirectFather from './components/comunication/DirectFather';
 import IndirectFather from "./components/comunication/IndirectFather.js";
+import Input from './components/forms/input';
+
 
 import './App.css'
 const App = () => {
@@ -17,6 +19,9 @@ const App = () => {
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+        <Card titulo="# 10 - Componente Controlado" color="#6A8D9D">
+          <Input />
+        </Card>
         <Card titulo="# 09 -Comunicação Indireta" color="#FF5108">
           <IndirectFather />
         </Card>
