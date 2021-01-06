@@ -7,8 +7,8 @@ import MemberFamily from './components/basics/MemberFamily';
 import StudentList from './components/repeat/studentList';
 import ProductList from './components/repeat/productsTable';
 import EvenorOdd from './components/conditional/EvenorOdd';
-import If from './components/conditional/If';
 import InfoUser from './components/conditional/InfoUser';
+import DirectFather from './components/comunication/DirectFather';
 
 import './App.css'
 const App = () => {
@@ -16,9 +16,12 @@ const App = () => {
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+        <Card titulo="# 08 -Comunicação Direta" color="#4D6684">
+          <DirectFather />
+        </Card>
         <Card titulo="# 07 -Renderização Condicional" color="#6C8672">
           <EvenorOdd number={21} />
-          <InfoUser user={{name: 'Fernando'}}/>
+          <InfoUser user={{ name: 'Fernando' }} />
         </Card>
         <Card titulo="# 06 -Desafio Repetição" color="#424242">
           <ProductList />
