@@ -1,5 +1,5 @@
 import students from '../../data/student';
-
+import './challengeProduct.css';
 
 const studentList =(props)=>{
 
