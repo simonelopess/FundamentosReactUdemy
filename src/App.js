@@ -4,6 +4,8 @@ import RandomComponent from './components/basics/RandomComponent';
 import Card from './components/layout/Card';
 import Family from './components/basics/Family';
 import MemberFamily from './components/basics/MemberFamily';
+import StudentList from './components/repeat/studentList';
+
 
 import './App.css'
 const App = () => {
@@ -11,7 +13,10 @@ const App = () => {
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
-        <Card titulo="#04 -Componentes com filhos" color="#28ABE3">
+        <Card titulo="#05 - Repetição" color="#354458">
+          <StudentList/>
+        </Card>
+        <Card titulo="#04 - Componentes com filhos" color="#28ABE3">
           <Family surname="Ferreira">
             <MemberFamily name="Pedro"/>
             <MemberFamily name="Ana" />
