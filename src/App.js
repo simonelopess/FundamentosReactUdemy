@@ -11,7 +11,7 @@ import InfoUser from './components/conditional/InfoUser';
 import DirectFather from './components/comunication/DirectFather';
 import IndirectFather from "./components/comunication/IndirectFather.js";
 import Input from './components/forms/input';
-
+import Counter from './components/Counter/Counter';
 
 import './App.css'
 const App = () => {
@@ -19,6 +19,9 @@ const App = () => {
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+        <Card titulo="# 11 - Contador" color="#A68572">
+          <Counter initialNumber={10} />
+        </Card>
         <Card titulo="# 10 - Componente Controlado" color="#6A8D9D">
           <Input />
         </Card>
