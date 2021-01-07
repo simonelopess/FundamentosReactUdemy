@@ -12,6 +12,7 @@ import DirectFather from './components/comunication/DirectFather';
 import IndirectFather from "./components/comunication/IndirectFather.js";
 import Input from './components/forms/input';
 import Counter from './components/Counter/Counter';
+import Lotto from './components/lotto/Lotto';
 
 import './App.css'
 const App = () => {
@@ -19,6 +20,9 @@ const App = () => {
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+        <Card titulo="# 12 - Desafio Loto" color="#3F0082">
+          <Lotto />
+        </Card>
         <Card titulo="# 11 - Contador" color="#A68572">
           <Counter initialNumber={10} />
         </Card>
