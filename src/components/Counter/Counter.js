@@ -1,5 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './Counter.css';
+import Display from './Display';
+import Buttons from './Buttons';
+import FormPass from './FormPass';
 
 class Counter extends Component {
   state = {
@@ -18,24 +21,23 @@ class Counter extends Component {
     })
   }
 
-  setPass = (event) => {
+  setPass = (newPass) => {
     this.setState({
-      pass: +event.target.value
+      pass: newPass
     })
   }
-render() {
-  return (
-    <div className="Counter">
-      <h2>Contador</h2>
-      <h3>Valor Atul: {this.state.number}</h3>
-      <div>
-        <label htmlFor="inputPass"></label>
-        <input id="inputPass" type="number" value={this.state.pass} onChange={this.setPass} />
+  render() {
+    return (
+      <div className="Counter">
+        <h2>Contador</h2>
+        <Display number={this.state.number} />
+        <div>
+          <FormPass pass={this.state.pass} />
+          <Buttons inc={() => this.inc()} dec={() => this.dec()} setPass={this.setPass} />
+        </div>
+
       </div>
-      <button onClick={this.dec}>-</button>
-      <button onClick={this.inc}>+</button>
-    </div>
-  );
-}
+    );
+  }
 }
 export default Counter;
