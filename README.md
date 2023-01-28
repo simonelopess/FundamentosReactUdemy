@@ -2,7 +2,11 @@
 
 In the project directory, you can run:
 
-### `yarn start`
+Instalar as dependências do projeto.
+### `npm install`
+
+Iniciar o projeto
+### `npm start`
 
  In this project you will find:
 
